@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageNewsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/textTitleNewsDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Navy"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Title"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/textAuthorNewsDetail"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Navy"
+                android:textSize="16dp"
+                android:text="Author" />
+
+            <TextView
+                android:id="@+id/textDateNewsDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Yellow"
+                android:fontFamily="monospace"
+                android:text="Date"
+                android:textSize="15dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textContentNewsDetail"
+                android:layout_width="match_parent"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Content"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/moreInfo" />
+
+            <TextView
+                android:id="@+id/textUrlNewsDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="#0E3EDA"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="20dp"
+                android:text="URL"
+                android:autoLink="web"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
